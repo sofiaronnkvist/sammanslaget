@@ -1,81 +1,210 @@
+@font-face {
+  font-family: 'Hind regular';
+  src: url('fonts/Hind-Regular.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Hind medium';
+  src: url('fonts/Hind-Medium.ttf');
+  font-weight: medium;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Hind light';
+  src: url('fonts/Hind-Light.ttf');
+  font-weight: lighter;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Hind bold';
+  src: url('fonts/Hind-Bold.ttf');
+  font-weight: bolder;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Hind semibold';
+  src: url('fonts/Hind-SemiBold.ttf');
+  font-weight: bold;
+  font-style: normal;
+}
+
 :root {
-  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 400;
+  font-family: Hind light;
+  font-size: 22px;
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  color: var(--main-grey);
+  background-color: var(--main-white);
+  --main-white: #f5f5f5;
+  --main-red: #e84426;
+  --main-grey: #565a5c;
+  --main-pink: #ffb8b2;
+  --main-orange: #f8ac49;
+  --main-green: #447500;
+  --main-blue: #4456b5;
+  --main-beige: #f0e9df;
+}
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
+nav {
+  display: flex;
+  justify-content: center;
+  height: 135px;
+  background-color: var(--main-white);
+  position: absolute;
+  top: 0;
+  width: 100%;
+  border-bottom-style: inset;
+  z-index: 1;
+}
+
+ul {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: disc;
+  margin-block-start: 30px;
+  margin-block-end: 30px;
+  padding-inline-start: 30px;
+  padding-inline-end: 30px;
+  width: 100%;
+  align-items: center;
+  gap: 94px;
+}
+
+li:first-child {
+  flex-grow: 1;
+  display: flex;
+  justify-content: flex-start;
+  font-size: 48px;
+}
+
+li {
+  text-decoration: none;
+  text-transform: uppercase;
+  list-style: none;
 }
 
 a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
+  color: #565a5c;
+  text-decoration: none;
+  font-family: Hind light;
+  letter-spacing: 2px;
 }
+
 a:hover {
-  color: #535bf2;
+  text-decoration: none;
+  color: #e84426;
 }
 
 body {
   margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+}
+
+html {
+  overflow: scroll;
+  scroll-behavior: smooth;
+}
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+}
+
+.scroller {
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+}
+
+.scroller section {
+  scroll-snap-align: start;
 }
 
 h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
-
-.card {
-  padding: 2em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
 
 #app {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
   text-align: center;
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
+section {
+  padding-top: 135px;
+  height: 85vh;
+  position: relative;
+  overflow-x: hidden;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-text {
+  width: 50%;
+}
+
+.header-text h1 {
+  font-size: 40px;
+  font-weight: normal;
+}
+
+.header-text h2 {
+  font-size: 32px;
+  letter-spacing: 1px;
+  font-weight: normal;
+}
+
+.header-cloud {
+  z-index: -1;
+}
+
+.header-cloud-div-green {
+  top: 30px;
+  right: -130px;
+  width: 470px;
+  max-height: fit-content;
+  position: absolute;
+  object-fit: none;
+}
+
+.header-cloud-div-orange {
+  top: 200px;
+  left: -200px;
+  width: 470px;
+  max-height: fit-content;
+  position: absolute;
+}
+
+.header-cloud-green {
+  width: 100%;
+  height: 100%;
+}
+
+.header-cloud-orange {
+  width: 100%;
+  height: 100%;
+}
+
+.arrow {
+  padding-top: 190px;
+  -webkit-animation: mover 2s infinite alternate;
+  animation: mover 2s infinite alternate;
+}
+
+@-webkit-keyframes mover {
+  0% {
+    transform: translateY(0);
   }
-  a:hover {
-    color: #747bff;
+  100% {
+    transform: translateY(-20px);
   }
-  button {
-    background-color: #f9f9f9;
+}
+@keyframes mover {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-20px);
   }
 }
