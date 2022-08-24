@@ -3,7 +3,7 @@
 
 <nav>
   <ul>
-    <li><a href="#hem">Namn</a></li>
+    <li><a href="#logo">Namn</a></li>
     <li><a href="#game">Spela</a></li>
     <li><a href="#store">Gör skillnad</a></li>
     <li><a href="#about">Om oss</a></li>
@@ -46,33 +46,51 @@
   </section>
 
   <section class="game-info">
-    <div>
-      <div>
-        <img src="#" alt="" />
-        <h3>Lorem ipsum</h3>
-        <p>
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        </p>
-        <img src="#" alt="" />
+    <div class="game-info-div">
+      <div class="red-div">
+        <img
+          class="background-info"
+          src="/public/red-rec.png"
+          alt="Red background"
+        />
+        <div class="text-logo">
+          <h3>Lorem ipsum</h3>
+          <p>
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+          <img class="logo" src="/public/red-logo.png" alt="Red logo" />
+        </div>
       </div>
-      <div>
-        <img src="#" alt="" />
-        <h3>Lorem ipsum</h3>
-        <p>
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        </p>
-        <img src="#" alt="" />
+      <div class="gold-div">
+        <img
+          class="background-info"
+          src="/public/gold-rec.png"
+          alt="Gold background"
+        />
+        <div class="text-logo">
+          <h3>Lorem ipsum</h3>
+          <p>
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+          <img class="logo" src="/public/gold-logo.png" alt="Gold logo" />
+        </div>
       </div>
-      <div>
-        <img src="#" alt="" />
-        <h3>Lorem ipsum</h3>
-        <p>
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua.
-        </p>
-        <img src="#" alt="" />
+      <div class="green-div">
+        <img
+          class="background-info"
+          src="/public/green-rec.png"
+          alt="Green background"
+        />
+        <div class="text-logo">
+          <h3>Lorem ipsum</h3>
+          <p>
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+          <img class="logo" src="/public/green-logo.png" alt="Green logo" />
+        </div>
       </div>
       <div />
     </div>
@@ -81,7 +99,7 @@
   <section id="store" class="stores">
     <div>
       <h2>Gör skillnad</h2>
-      <img src="#" alt="" />
+      <img src="/public/bjorkafrihet.png" alt="Björkå Frihet logo" />
       <h4>
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua.
@@ -95,18 +113,27 @@
 
   <section id="about" class="about">
     <h2>Om oss</h2>
-    <h4>
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-      veniam, quis nostrud exercitation ullamco laboris.
-    </h4>
-    <img src="#" alt="" />
-    <img src="#" alt="" />
-    <img src="#" alt="" />
+    <div>
+      <div>
+        <div>
+          <img src="" alt="" />
+        </div>
+        <div>
+          <h3>Namn Efternam, Klassnamn</h3>
+          <p>
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+        </div>
+      </div>
+    </div>
   </section>
 </main>
 
-<footer />
+<footer>
+  <img src="/public/yrgo-logo.png" alt="Yrgo logo" />
+  <img src="/public/bjorka-logo.png" alt="Björkå Frihet logo" />
+</footer>
 
 <style>
 </style>

@@ -101,7 +101,6 @@ body {
 
 html {
   overflow: scroll;
-  scroll-behavior: smooth;
 }
 ::-webkit-scrollbar {
   width: 0px;
@@ -112,6 +111,7 @@ html {
   height: 100vh;
   overflow-y: scroll;
   scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
 }
 
 .scroller section {
@@ -207,4 +207,75 @@ section {
   100% {
     transform: translateY(-20px);
   }
+}
+
+.game-info-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.background-info {
+  position: relative;
+}
+
+.red-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-right: 70px;
+}
+
+.green-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gold-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-right: 70px;
+}
+
+.text-logo {
+  position: absolute;
+  width: 15%;
+  color: var(--main-white);
+  padding-top: 20px;
+}
+
+.game-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer {
+  height: 163px;
+  background-color: var(--main-beige);
+  display: flex;
+}
+
+.stores h2 {
+  text-transform: uppercase;
+  font-size: 32px;
+}
+
+.about h2 {
+  text-transform: uppercase;
+  font-size: 32px;
+}
+
+.stores button {
+  background-color: var(--main-green);
+  border-style: none;
+  border-radius: 10px;
+  width: 292px;
+  height: 69px;
+  font-size: 32px;
+  font-family: Hind regular;
+  color: var(--main-white);
+  letter-spacing: 2px;
 }
