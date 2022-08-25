@@ -479,8 +479,8 @@ section {
 
   .profiles {
     width: 100vw;
-    padding-inline-start: 5%;
-    padding-inline-end: 5%;
+    padding-inline-start: 0%;
+    padding-inline-end: 0%;
   }
 
   .header-text {
