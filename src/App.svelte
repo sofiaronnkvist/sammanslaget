@@ -1,4 +1,19 @@
 <script>
+  import cloud_orange_new from './assets/cloud_orange_new.png';
+  import cloud_green_new from './assets/cloud_green_new.png';
+  import cloud_pink_new from './assets/cloud_pink_new.png';
+  import cloud_grey_new from './assets/cloud_grey_new.png';
+  import arrow from './assets/arrow.png';
+  import bjorkafrihet from './assets/bjorkafrihet.png';
+  import yrgoLogo from './assets/yrgo-logo.png';
+  import bjorkaLogo from './assets/bjorka-logo.png';
+  import greenLogo from './assets/green-logo.png';
+  import goldLogo from './assets/gold-logo.png';
+  import redLogo from './assets/red-logo.png';
+  import redRec from './assets/red-rec.png';
+  import greenRec from './assets/green-rec.png';
+  import goldRec from './assets/gold-rec.png';
+  import vite from './assets/vite.svg';
 </script>
 
 <nav>
@@ -15,7 +30,7 @@
     <div class="header-cloud-div-orange">
       <img
         class="header-cloud header-cloud-orange"
-        src="/public/cloud_orange_new.png"
+        src={cloud_orange_new}
         alt="Decorative orange cloud"
       />
     </div>
@@ -26,13 +41,13 @@
         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
         veniam, quis nostrud exercitation ullamco laboris.
       </h2>
-      <img class="arrow" src="/public/arrow.png" alt="Arrow down symbol" />
+      <img class="arrow" src={arrow} alt="Arrow down symbol" />
     </div>
     <div>
       <div class="header-cloud-div-green">
         <img
           class="header-cloud header-cloud-green"
-          src="/public/cloud_green_new.png"
+          src={cloud_green_new}
           alt="Decorative green cloud"
         />
       </div>
@@ -48,24 +63,20 @@
   <section class="game-info">
     <div class="game-info-div">
       <div class="red-div">
-        <img
-          class="background-info"
-          src="/public/red-rec.png"
-          alt="Red background"
-        />
+        <img class="background-info" src={redRec} alt="Red background" />
         <div class="text-logo">
           <h3>Lorem ipsum</h3>
           <p>
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </p>
-          <img class="logo" src="/public/red-logo.png" alt="Red logo" />
+          <img class="logo" src=" red-logo.png" alt="Red logo" />
         </div>
       </div>
       <div class="gold-div">
         <img
           class="background-info"
-          src="/public/gold-rec.png"
+          src={goldRec}
           alt="Gold background"
         />
         <div class="text-logo">
@@ -74,13 +85,13 @@
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </p>
-          <img class="logo" src="/public/gold-logo.png" alt="Gold logo" />
+          <img class="logo" src={goldLogo} alt="Gold logo" />
         </div>
       </div>
       <div class="green-div">
         <img
           class="background-info"
-          src="/public/green-rec.png"
+          src={greenRec}
           alt="Green background"
         />
         <div class="text-logo">
@@ -89,7 +100,7 @@
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </p>
-          <img class="logo" src="/public/green-logo.png" alt="Green logo" />
+          <img class="logo" src={greenLogo} alt="Green logo" />
         </div>
       </div>
       <div />
@@ -99,7 +110,7 @@
   <section id="store" class="stores">
     <div>
       <h2>Gör skillnad</h2>
-      <img src="/public/bjorkafrihet.png" alt="Björkå Frihet logo" />
+      <img src={bjorkafrihet} alt="Björkå Frihet logo" />
       <h4>
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua.
@@ -131,8 +142,8 @@
 </main>
 
 <footer>
-  <img src="/public/yrgo-logo.png" alt="Yrgo logo" />
-  <img src="/public/bjorka-logo.png" alt="Björkå Frihet logo" />
+  <img src={yrgoLogo} alt="Yrgo logo" />
+  <img src={bjorkaLogo} alt="Björkå Frihet logo" />
 </footer>
 
 <style>
