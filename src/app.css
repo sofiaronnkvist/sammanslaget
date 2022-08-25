@@ -48,7 +48,7 @@
 nav {
   display: flex;
   justify-content: center;
-  height: 135px;
+  height: 110px;
   background-color: var(--main-white);
   position: absolute;
   top: 0;
@@ -128,7 +128,7 @@ h1 {
 }
 
 section {
-  padding-top: 135px;
+  padding-top: 110px;
   height: 85vh;
   position: relative;
   overflow-x: hidden;
@@ -160,8 +160,16 @@ section {
 }
 
 .header-cloud-div-green {
-  top: 30px;
-  right: -130px;
+  top: 105px;
+  right: -200px;
+  width: 470px;
+  position: absolute;
+  object-fit: none;
+}
+
+.header-cloud-div-pink {
+  top: 550px;
+  right: -265px;
   width: 470px;
   max-height: fit-content;
   position: absolute;
@@ -170,20 +178,32 @@ section {
 
 .header-cloud-div-orange {
   top: 200px;
-  left: -200px;
+  left: -230px;
   width: 470px;
   max-height: fit-content;
+  width: 470px;
   position: absolute;
 }
 
 .header-cloud-green {
-  width: 100%;
-  height: 100%;
+  width: 70%;
+  height: 70%;
+  object-fit: contain;
+  transform: rotate(160deg);
+}
+
+.header-cloud-pink {
+  width: 60%;
+  height: 60%;
+  transform: rotate(90deg);
+  object-fit: contain;
 }
 
 .header-cloud-orange {
-  width: 100%;
-  height: 100%;
+  width: 90%;
+  height: 90%;
+  transform: rotate(130deg);
+  object-fit: contain;
 }
 
 .arrow {
@@ -252,20 +272,16 @@ section {
   align-items: center;
 }
 
-footer {
-  height: 163px;
-  background-color: var(--main-beige);
-  display: flex;
-}
-
 .stores h2 {
   text-transform: uppercase;
   font-size: 32px;
+  letter-spacing: 2px;
 }
 
 .about h2 {
   text-transform: uppercase;
   font-size: 32px;
+  letter-spacing: 2px;
 }
 
 .stores button {
@@ -279,3 +295,140 @@ footer {
   color: var(--main-white);
   letter-spacing: 2px;
 }
+
+.stores a {
+  color: var(--main-white);
+}
+
+.profiles {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  padding-inline-start: 15%;
+  padding-inline-end: 15%;
+}
+
+.profile-container:nth-child(2) {
+  align-self: flex-end;
+}
+
+.profile-container:nth-child(4) {
+  align-self: flex-end;
+}
+
+.profile-container {
+  display: flex;
+  width: 45vw;
+  gap: 15px;
+  max-height: 100px;
+  align-items: center;
+}
+
+.profile-text-div {
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-text-div h3 {
+  font-size: 20px;
+  text-align: left;
+  letter-spacing: 2px;
+  margin: 0;
+}
+
+.profile-text-div p {
+  font-size: 16px;
+  text-align: left;
+  letter-spacing: 1px;
+  margin: 0;
+}
+
+.profile-image-div {
+  width: 90px;
+  height: 90px;
+}
+
+.profile-image-div img {
+  max-width: 90px;
+  max-height: 90px;
+  object-fit: contain;
+}
+
+.div-grey-cloud {
+  width: 555px;
+  height: 594px;
+  position: absolute;
+  left: -300px;
+}
+
+.store-cloud-grey {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transform: rotate(320deg);
+}
+
+.store-cloud-div-pink {
+  width: 555px;
+  height: 594px;
+  top: -50px;
+  position: absolute;
+  right: -250px;
+}
+
+.store-cloud-pink {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transform: rotate(320deg);
+}
+
+.div-orange-cloud {
+  width: 555px;
+  height: 594px;
+  position: absolute;
+  left: -300px;
+}
+
+.about-cloud-orange {
+  width: 80%;
+  height: 80%;
+  object-fit: contain;
+  transform: rotate(320deg);
+}
+
+.div-green-cloud {
+  width: 555px;
+  height: 594px;
+  position: absolute;
+  top: -40px;
+  right: -280px;
+}
+
+.about-cloud-green {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transform: rotate(320deg);
+}
+
+.gor-skillnad {
+  width: 40vw;
+}
+
+#store {
+  display: flex;
+  justify-content: center;
+}
+
+.bottom-logos {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding-top: 2em;
+}
+
+.bottom-logos img {
+  scale: 50%;
+}
+

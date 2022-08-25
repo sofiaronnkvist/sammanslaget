@@ -13,12 +13,17 @@
   import redRec from './assets/red-rec.png';
   import greenRec from './assets/green-rec.png';
   import goldRec from './assets/gold-rec.png';
+  import elin from './assets/elin.png';
+  import sofia from './assets/sofia.png';
+  import eric from './assets/eric.png';
+  import vilma from './assets/vilma.png';
+  import luis from './assets/luis.png';
   import vite from './assets/vite.svg';
 </script>
 
 <nav>
   <ul>
-    <li><a href="#logo">Namn</a></li>
+    <li><a href="#header">Namn</a></li>
     <li><a href="#game">Spela</a></li>
     <li><a href="#store">Gör skillnad</a></li>
     <li><a href="#about">Om oss</a></li>
@@ -26,7 +31,7 @@
 </nav>
 
 <main class="scroller">
-  <section class="header">
+  <section id="header" class="header">
     <div class="header-cloud-div-orange">
       <img
         class="header-cloud header-cloud-orange"
@@ -52,6 +57,15 @@
         />
       </div>
     </div>
+    <div>
+      <div class="header-cloud-div-pink">
+        <img
+          class="header-cloud header-cloud-pink"
+          src={cloud_pink_new}
+          alt="Decorative pink cloud"
+        />
+      </div>
+    </div>
   </section>
 
   <section id="game" class="game">
@@ -70,15 +84,11 @@
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </p>
-          <img class="logo" src=" red-logo.png" alt="Red logo" />
+          <img class="logo" src={redLogo} alt="Red logo" />
         </div>
       </div>
       <div class="gold-div">
-        <img
-          class="background-info"
-          src={goldRec}
-          alt="Gold background"
-        />
+        <img class="background-info" src={goldRec} alt="Gold background" />
         <div class="text-logo">
           <h3>Lorem ipsum</h3>
           <p>
@@ -89,11 +99,7 @@
         </div>
       </div>
       <div class="green-div">
-        <img
-          class="background-info"
-          src={greenRec}
-          alt="Green background"
-        />
+        <img class="background-info" src={greenRec} alt="Green background" />
         <div class="text-logo">
           <h3>Lorem ipsum</h3>
           <p>
@@ -108,43 +114,120 @@
   </section>
 
   <section id="store" class="stores">
-    <div>
+    <div class="div-grey-cloud">
+      <img
+        class="store-cloud-grey"
+        src={cloud_grey_new}
+        alt="Decorative grey cloud"
+      />
+    </div>
+    <div class="store-cloud-div-pink">
+      <img
+        class="store-cloud-pink"
+        src={cloud_pink_new}
+        alt="Decorative pink cloud"
+      />
+    </div>
+    <div class="gor-skillnad">
       <h2>Gör skillnad</h2>
       <img src={bjorkafrihet} alt="Björkå Frihet logo" />
       <h4>
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua.
       </h4>
-      <button>Hitta butik</button>
-      <img src="#" alt="" />
-      <img src="#" alt="" />
-      <img src="#" alt="" />
+      <button
+        ><a
+          href="https://bjorkafrihet.se/oppettider-bjorkafrihet-second-hand-butiker/"
+          target="_blank">Hitta butik</a
+        ></button
+      >
     </div>
   </section>
 
   <section id="about" class="about">
     <h2>Om oss</h2>
-    <div>
-      <div>
-        <div>
-          <img src="" alt="" />
+    <div class="div-orange-cloud">
+      <img
+        class="about-cloud-orange"
+        src={cloud_orange_new}
+        alt="Decorative orange cloud"
+      />
+    </div>
+    <div class="div-green-cloud">
+      <img
+        class="about-cloud-green"
+        src={cloud_green_new}
+        alt="Decorative green cloud"
+      />
+    </div>
+    <div class="profiles">
+      <div class="profile-container">
+        <div class="profile-image-div">
+          <img src={elin} alt="Profile picture" />
         </div>
-        <div>
-          <h3>Namn Efternam, Klassnamn</h3>
+        <div class="profile-text-div">
+          <h3>Elin Deninger, UX22</h3>
           <p>
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </p>
         </div>
       </div>
+      <div class="profile-container">
+        <div class="profile-image-div">
+          <img src={eric} alt="Profile picture" />
+        </div>
+        <div class="profile-text-div">
+          <h3>Eric Locher, GP21</h3>
+          <p>
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+        </div>
+      </div>
+      <div class="profile-container">
+        <div class="profile-image-div">
+          <img src={luis} alt="Profile picture" />
+        </div>
+        <div class="profile-text-div">
+          <h3>Luis Pablo Gomez Vecchio, GP21</h3>
+          <p>
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+        </div>
+      </div>
+      <div class="profile-container">
+        <div class="profile-image-div">
+          <img src={sofia} alt="Profile picture" />
+        </div>
+        <div class="profile-text-div">
+          <h3>Sofia Rönnkvist, WU21</h3>
+          <p>
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+        </div>
+      </div>
+      <div class="profile-container">
+        <div class="profile-image-div">
+          <img src={vilma} alt="Profile picture" />
+        </div>
+        <div class="profile-text-div">
+          <h3>Vilma Gustafsson, GA21</h3>
+          <p>
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+        </div>
+      </div>
+      <div class="bottom-logos">
+        <img src={yrgoLogo} alt="Yrgo logo" />
+        <img src={bjorkaLogo} alt="Björkå Frihet logo" />
+      </div>
     </div>
   </section>
 </main>
-
-<footer>
-  <img src={yrgoLogo} alt="Yrgo logo" />
-  <img src={bjorkaLogo} alt="Björkå Frihet logo" />
-</footer>
 
 <style>
 </style>
