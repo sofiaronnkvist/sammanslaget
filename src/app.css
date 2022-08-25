@@ -325,7 +325,7 @@ section {
   gap: 15px;
   max-height: 100px;
   align-items: center;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
 }
 
 .profile-text-div {
@@ -454,6 +454,7 @@ section {
     max-height: max-content;
     padding-bottom: 20px;
     justify-content: center;
+    flex-wrap: wrap;
   }
 
   nav {
@@ -623,5 +624,13 @@ section {
   .gold-div {
     padding-right: 0;
     padding-bottom: 20px;
+  }
+
+  .profile-text-div h3 {
+    text-align: center;
+  }
+
+  .profile-text-div p {
+    text-align: center;
   }
 }
