@@ -233,6 +233,7 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .background-info {
@@ -244,6 +245,7 @@ section {
   align-items: center;
   justify-content: center;
   padding-right: 70px;
+  padding-bottom: 0px;
 }
 
 .green-div {
@@ -257,6 +259,7 @@ section {
   align-items: center;
   justify-content: center;
   padding-right: 70px;
+  padding-bottom: 0px;
 }
 
 .text-logo {
@@ -322,6 +325,7 @@ section {
   gap: 15px;
   max-height: 100px;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .profile-text-div {
@@ -401,7 +405,7 @@ section {
   width: 555px;
   height: 594px;
   position: absolute;
-  top: -40px;
+  top: -20px;
   right: -280px;
 }
 
@@ -414,6 +418,10 @@ section {
 
 .gor-skillnad {
   width: 40vw;
+}
+
+.gor-skillnad img {
+  width: auto;
 }
 
 #store {
@@ -432,3 +440,188 @@ section {
   scale: 50%;
 }
 
+@media only screen and (max-width: 1023px) {
+  .profile-container:nth-child(2) {
+    align-self: flex-start;
+  }
+
+  .profile-container:nth-child(4) {
+    align-self: flex-start;
+  }
+
+  .profile-container {
+    width: 80vw;
+    max-height: max-content;
+    padding-bottom: 20px;
+    justify-content: center;
+  }
+
+  nav {
+    display: none;
+  }
+
+  section {
+    height: 100vw;
+    padding-top: 0;
+  }
+
+  .scroller {
+    height: 100vh;
+    overflow-y: visible;
+    scroll-snap-type: none;
+    scroll-behavior: smooth;
+  }
+
+  .scroller section {
+    scroll-snap-align: none;
+  }
+
+  .profiles {
+    width: 100vw;
+    padding-inline-start: 5%;
+    padding-inline-end: 5%;
+  }
+
+  .header-text {
+    width: 90%;
+  }
+
+  .header-text h1 {
+    font-size: 24px;
+    font-weight: normal;
+  }
+
+  .header-text h2 {
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-weight: normal;
+  }
+
+  .header {
+    height: 100vh;
+  }
+
+  .about {
+    height: max-content;
+  }
+
+  #store {
+    height: max-content;
+  }
+
+  .arrow {
+    padding-top: 80px;
+  }
+
+  .header-cloud-div-green {
+    display: none;
+  }
+
+  .header-cloud-div-pink {
+    display: none;
+  }
+
+  .header-cloud-div-orange {
+    display: none;
+  }
+
+  .header-cloud-green {
+    display: none;
+  }
+
+  .header-cloud-pink {
+    display: none;
+  }
+
+  .header-cloud-orange {
+    display: none;
+  }
+
+  .div-grey-cloud {
+    display: none;
+  }
+
+  .store-cloud-grey {
+    display: none;
+  }
+
+  .store-cloud-div-pink {
+    display: none;
+  }
+
+  .store-cloud-pink {
+    display: none;
+  }
+
+  .div-orange-cloud {
+    display: none;
+  }
+
+  .about-cloud-orange {
+    display: none;
+  }
+
+  .div-green-cloud {
+    display: none;
+  }
+
+  .about-cloud-green {
+    display: none;
+  }
+
+  .stores button {
+    background-color: var(--main-green);
+    border-style: none;
+    border-radius: 10px;
+    width: 150px;
+    height: 69px;
+    font-size: 16px;
+    font-family: Hind regular;
+    color: var(--main-white);
+    letter-spacing: 2px;
+  }
+
+  .stores h2 {
+    text-transform: uppercase;
+    font-size: 24px;
+    letter-spacing: 1px;
+  }
+
+  .stores h4 {
+    font-size: 16px;
+    letter-spacing: 1px;
+  }
+
+  .gor-skillnad img {
+    width: 40vw;
+  }
+
+  .game-info {
+    height: max-content;
+  }
+
+  .text-logo {
+    position: absolute;
+    width: 50%;
+    color: var(--main-white);
+    padding-top: 20px;
+  }
+
+  .text-logo h3 {
+    font-size: 20px;
+  }
+
+  .text-logo p {
+    font-size: 16px;
+  }
+
+  .red-div {
+    padding-right: 0;
+    padding-bottom: 20px;
+  }
+
+  .gold-div {
+    padding-right: 0;
+    padding-bottom: 20px;
+  }
+}

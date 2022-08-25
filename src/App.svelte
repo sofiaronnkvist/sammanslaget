@@ -166,7 +166,7 @@
           <img src={elin} alt="Profile picture" />
         </div>
         <div class="profile-text-div">
-          <h3>Elin Deninger, UX22</h3>
+          <h3>Elin Deninger, UX22 📩</h3>
           <p>
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -178,7 +178,7 @@
           <img src={eric} alt="Profile picture" />
         </div>
         <div class="profile-text-div">
-          <h3>Eric Locher, GP21</h3>
+          <h3>Eric Locher, GP21 📩</h3>
           <p>
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -190,7 +190,7 @@
           <img src={luis} alt="Profile picture" />
         </div>
         <div class="profile-text-div">
-          <h3>Luis Pablo Gomez Vecchio, GP21</h3>
+          <h3>Luis Pablo Gomez Vecchio, GP21 📩</h3>
           <p>
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -202,7 +202,7 @@
           <img src={sofia} alt="Profile picture" />
         </div>
         <div class="profile-text-div">
-          <h3>Sofia Rönnkvist, WU21</h3>
+          <h3>Sofia Rönnkvist, WU21 📩</h3>
           <p>
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -214,7 +214,7 @@
           <img src={vilma} alt="Profile picture" />
         </div>
         <div class="profile-text-div">
-          <h3>Vilma Gustafsson, GA21</h3>
+          <h3>Vilma Gustafsson, GA21 📩</h3>
           <p>
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -222,8 +222,12 @@
         </div>
       </div>
       <div class="bottom-logos">
-        <img src={yrgoLogo} alt="Yrgo logo" />
-        <img src={bjorkaLogo} alt="Björkå Frihet logo" />
+        <a href="http://yrgo.se/" target="_blank"
+          ><img src={yrgoLogo} alt="Yrgo logo" /></a
+        >
+        <a href="https://bjorkafrihet.se/" target="_blank">
+          <img src={bjorkaLogo} alt="Björkå Frihet logo" /></a
+        >
       </div>
     </div>
   </section>
