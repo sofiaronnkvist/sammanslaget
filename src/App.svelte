@@ -18,12 +18,12 @@
   import eric from './assets/eric.png';
   import vilma from './assets/vilma.png';
   import luis from './assets/luis.png';
-  import vite from './assets/vite.svg';
+  import Game from './lib/Game.svelte';
 </script>
 
 <nav>
   <ul>
-    <li><a href="#header">Namn</a></li>
+    <li><a href="#header">Trend-Rush</a></li>
     <li><a href="#game">Spela</a></li>
     <li><a href="#store">Gör skillnad</a></li>
     <li><a href="#about">Om oss</a></li>
@@ -40,13 +40,16 @@
       />
     </div>
     <div class="header-text">
-      <h1>Hinner du med i trendcykeln?</h1>
+      <h1>Hinner du med i trendcyklerna?</h1>
       <h2>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation ullamco laboris.
+        Vet du vad Y2K är? Eller Dark Academia? Trendcyklerna blir allt
+        snabbare, vilket betyder fler obegripliga koncept och mer produktion av
+        nya kläder. I det här spelet är målet är att sortera kläder som kommer
+        in till en second hand-butik. Hur många plagg hinner du med?
       </h2>
-      <img class="arrow" src={arrow} alt="Arrow down symbol" />
+      <a href="#game"
+        ><img class="arrow" src={arrow} alt="Arrow down symbol" /></a
+      >
     </div>
     <div>
       <div class="header-cloud-div-green">
@@ -70,7 +73,7 @@
 
   <section id="game" class="game">
     <div>
-      <h2>Spelet</h2>
+      <!-- <Game /> -->
     </div>
   </section>
 
@@ -79,10 +82,10 @@
       <div class="red-div">
         <img class="background-info" src={redRec} alt="Red background" />
         <div class="text-logo">
-          <h3>Lorem ipsum</h3>
+          <h3>Butik</h3>
           <p>
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Till butiken sorteras det som är helt och rent. På så sätt kan det
+            enkelt säljas vidare, vilket förlänger plaggets livslängd betydligt.
           </p>
           <img class="logo" src={redLogo} alt="Red logo" />
         </div>
@@ -90,10 +93,11 @@
       <div class="gold-div">
         <img class="background-info" src={goldRec} alt="Gold background" />
         <div class="text-logo">
-          <h3>Lorem ipsum</h3>
+          <h3>Trend</h3>
           <p>
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Du vet väl att mode alltid går i cykler? Allt som finns i butikerna
+            idag har på något sätt redan existerat, så second hand i första
+            hand!
           </p>
           <img class="logo" src={goldLogo} alt="Gold logo" />
         </div>
@@ -101,10 +105,10 @@
       <div class="green-div">
         <img class="background-info" src={greenRec} alt="Green background" />
         <div class="text-logo">
-          <h3>Lorem ipsum</h3>
+          <h3>Återvinning</h3>
           <p>
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            I Sverige slänger vi i snitt hela 7,5 kilo textil i soporna varje
+            år! Skänk eller sortera istället dina gamla kläder och textilier.
           </p>
           <img class="logo" src={greenLogo} alt="Green logo" />
         </div>
@@ -132,8 +136,8 @@
       <h2>Gör skillnad</h2>
       <img src={bjorkafrihet} alt="Björkå Frihet logo" />
       <h4>
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua.
+        Bryt dig loss ifrån ohållbara trendcykler och hitta din egen personliga
+        stil! Det är bättre både för dig, planeten och plånboken.
       </h4>
       <button
         ><a
@@ -171,8 +175,8 @@
           ">Elin Deninger, UX22 📩</a
           >
           <p>
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Lett idégenerering och designprocess. Designat UI för spel samt UI
+            för hemsida. Utformat och genomfört användartester för samtliga.
           </p>
         </div>
       </div>
@@ -213,8 +217,8 @@
         <div class="profile-text-div">
           <a href="mailto:sofia@ronnkvist.com">Sofia Rönnkvist, WU21 📩</a>
           <p>
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Idéutformning av koncept för hemsida och spel, utveckling av hela
+            hemsidan samt dess copywriting.
           </p>
         </div>
       </div>
