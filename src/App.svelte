@@ -214,8 +214,8 @@
           ">Eric Locher, GP21 📩</a
           >
           <p>
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Programmerat gameplay samt system. Vart delaktig i utformning av
+            spelidé och mer konkreta gameplay koncept.
           </p>
         </div>
       </div>
@@ -229,8 +229,8 @@
           ">Luis Pablo Gomez Vecchio, GP21 📩</a
           >
           <p>
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Programmerat spels gameplay, genomfört UI och menyer och skapat
+            spels musik.
           </p>
         </div>
       </div>
@@ -256,8 +256,8 @@
           ">Vilma Gustafsson, GA21 📩</a
           >
           <p>
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Utformning av idé för spelkoncept. Skapat grafik för assets i spel
+            samt till hemsida.
           </p>
         </div>
       </div>
