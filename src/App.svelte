@@ -22,6 +22,7 @@
   import Mobile from './assets/mobile.png';
   import GameLogoGreen from './assets/green-game-logo.png';
   import GameLogoRed from './assets/red-game-logo.png';
+  import NoMobile from './assets/nomobile.png';
 
   let src = GameLogoGreen;
 
@@ -96,8 +97,11 @@
   </section>
 
   <section id="game" class="game">
-    <div>
+    <div class="the-game">
       <Game />
+    </div>
+    <div class="the-no-game">
+      <img src={NoMobile} alt="You can't access the game on mobile" />
     </div>
   </section>
 

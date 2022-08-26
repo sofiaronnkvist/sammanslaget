@@ -466,6 +466,17 @@ button:hover {
   scale: 50%;
 }
 
+.the-no-game {
+  display: none;
+  width: 100vw;
+  height: 100vh;
+}
+
+.the-no-game img {
+  width: 100%;
+  object-fit: contain;
+}
+
 @media only screen and (max-width: 1023px) {
   .profile-container:nth-child(2) {
     align-self: flex-start;
@@ -473,6 +484,14 @@ button:hover {
 
   .profile-container:nth-child(4) {
     align-self: flex-start;
+  }
+
+  .the-no-game {
+    display: block;
+  }
+
+  .the-game {
+    display: none;
   }
 
   .profile-container {
@@ -542,6 +561,10 @@ button:hover {
   }
 
   #store {
+    height: max-content;
+  }
+
+  #game {
     height: max-content;
   }
 
