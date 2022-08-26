@@ -36,15 +36,15 @@
       updateBannerVisibility();
     }
 
-    var buildUrl = '/Build';
-    var loaderUrl = buildUrl + '/Test.loader.js';
+    var buildUrl = 'Build';
+    var loaderUrl = buildUrl + '/TrendRush-White-Background.loader.js';
     var config = {
-      dataUrl: buildUrl + '/Test.data',
-      frameworkUrl: buildUrl + '/Test.framework.js',
-      codeUrl: buildUrl + '/Test.wasm',
+      dataUrl: buildUrl + '/TrendRush-White-Background.data',
+      frameworkUrl: buildUrl + '/TrendRush-White-Background.framework.js',
+      codeUrl: buildUrl + '/TrendRush-White-Background.wasm',
       streamingAssetsUrl: 'StreamingAssets',
-      companyName: 'DefaultCompany',
-      productName: 'Sammanslaget',
+      companyName: 'Yrgo',
+      productName: 'Trend Rush',
       productVersion: '1.0',
       showBanner: unityShowBanner,
     };
@@ -100,6 +100,6 @@
   <div id="unity-footer">
     <div id="unity-webgl-logo" />
     <div id="unity-fullscreen-button" />
-    <div id="unity-build-title">Sammanslaget</div>
+    <div id="unity-build-title">Trend Rush</div>
   </div>
 </div>

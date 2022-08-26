@@ -33,7 +33,7 @@
   "include": [
     "src/**/*.d.ts",
     "src/**/*.js",
-    "src/**/**/Test.loader.js",
+    "src/**/**/TrendRush-White-Background.framework.js",
     "src/**/*.svelte"
   ]
 }
