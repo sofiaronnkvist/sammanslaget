@@ -36,7 +36,7 @@
       updateBannerVisibility();
     }
 
-    var buildUrl = '/static/Build';
+    var buildUrl = '/Build';
     var loaderUrl = buildUrl + '/Test.loader.js';
     var config = {
       dataUrl: buildUrl + '/Test.data',
