@@ -20,12 +20,34 @@
   import luis from './assets/luis.png';
   import Game from './lib/Game.svelte';
   import Mobile from './assets/mobile.png';
-  import GameLogo from './assets/game-logo.png';
+  import GameLogoGreen from './assets/green-game-logo.png';
+  import GameLogoRed from './assets/red-game-logo.png';
+
+  let src = GameLogoGreen;
+
+  function handleMouseOver(e) {
+    src = GameLogoRed;
+  }
+  function handleMouseOut(e) {
+    src = GameLogoGreen;
+  }
 </script>
 
 <nav>
   <ul>
-    <li><a href="#header">Trend-Rush</a></li>
+    <li>
+      <a class="game-logo-container" href="#header"
+        ><img
+          {src}
+          class="game-logo"
+          alt="Game logo"
+          on:focus={handleMouseOver}
+          on:mouseover={handleMouseOver}
+          on:blur={handleMouseOut}
+          on:mouseout={handleMouseOut}
+        /></a
+      >
+    </li>
     <li><a href="#game">Spela</a></li>
     <li><a href="#store">Gör skillnad</a></li>
     <li><a href="#about">Om oss</a></li>
