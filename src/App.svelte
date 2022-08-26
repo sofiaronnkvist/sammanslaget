@@ -19,6 +19,8 @@
   import vilma from './assets/vilma.png';
   import luis from './assets/luis.png';
   import Game from './lib/Game.svelte';
+  import Mobile from './assets/mobile.png';
+  import GameLogo from './assets/game-logo.png';
 </script>
 
 <nav>
@@ -73,7 +75,7 @@
 
   <section id="game" class="game">
     <div>
-      <!-- <Game /> -->
+      <Game />
     </div>
   </section>
 
