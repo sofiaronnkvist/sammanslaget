@@ -315,7 +315,7 @@ section {
 }
 
 button:hover {
-  box-shadow: 2px 4px 4px var(--main-grey);
+  box-shadow: 2px 4px 4px #c1c1c1;
 }
 
 .stores a {
