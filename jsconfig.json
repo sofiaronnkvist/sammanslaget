@@ -33,7 +33,7 @@
   "include": [
     "src/**/*.d.ts",
     "src/**/*.js",
-    "src/**/*.svelte",
-    "src/static/Build/*.js"
+    "src/**/**/Test.loader.js",
+    "src/**/*.svelte"
   ]
 }
