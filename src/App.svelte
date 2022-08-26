@@ -68,8 +68,8 @@
       <h2>
         Vet du vad Y2K är? Eller Dark Academia? Trendcyklerna blir allt
         snabbare, vilket betyder fler obegripliga koncept och mer produktion av
-        nya kläder. I det här spelet är målet är att sortera kläder som kommer
-        in till en second hand-butik. Hur många plagg hinner du med?
+        nya kläder. I det här spelet är målet är att sortera kläder som skänkts
+        till en second hand-butik. Hur många plagg hinner du med?
       </h2>
       <a href="#game"
         ><img class="arrow" src={arrow} alt="Arrow down symbol" /></a
