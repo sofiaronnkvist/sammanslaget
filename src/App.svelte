@@ -131,8 +131,8 @@
         <div class="text-logo">
           <h3>Återvinning</h3>
           <p>
-            I Sverige slänger vi i snitt hela 7,5 kilo textil i soporna varje
-            år! Skänk eller sortera istället dina gamla kläder och textilier.
+            I Sverige slänger vi i snitt hela 7,5 kilo textil per person i
+            soporna varje år! Skänk eller sortera istället dina gamla kläder.
           </p>
           <img class="logo" src={greenLogo} alt="Green logo" />
         </div>
