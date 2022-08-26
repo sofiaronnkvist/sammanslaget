@@ -314,6 +314,10 @@ section {
   letter-spacing: 2px;
 }
 
+button:hover {
+  box-shadow: 2px 4px 4px var(--main-grey);
+}
+
 .stores a {
   color: var(--main-white);
 }
